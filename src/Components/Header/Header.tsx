@@ -27,14 +27,14 @@ const Header = () => {
     const searchBooks = useCallback(async () => {
         dispatch(fetchBooks(Params))
         navigate(ROUTE.HOME)
-    }, [Params])
+    }, [dispatch,navigate, Params])
 
     const onKeyPress: React.KeyboardEventHandler<HTMLInputElement> = useCallback((e) => {
         if (e.key === "Enter") {
             dispatch(fetchBooks(Params))
             navigate(ROUTE.HOME)
         }
-    },[Params])
+    },[dispatch,navigate,Params])
 
 
     //select Subject

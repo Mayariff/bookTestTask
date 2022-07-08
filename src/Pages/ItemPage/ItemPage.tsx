@@ -19,7 +19,7 @@ const ItemPage = () => {
 
     useEffect(() => {
         itemID && dispatch(showBookDetails(itemID))
-    }, [])
+    }, [itemID, dispatch])
 
     // book cover for css
     const image = {backgroundImage: `url(${findImg(book)})`}

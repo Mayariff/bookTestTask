@@ -20,7 +20,7 @@ export function ErrorSnackbar() {
     const [open, setOpen] = React.useState(false);
     useEffect(() => {
         error && setOpen(true)
-    }, [])
+    }, [error])
 
 
     const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
