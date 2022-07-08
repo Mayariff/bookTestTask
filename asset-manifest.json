@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bookTestTask/static/css/main.243e708b.css",
+    "main.js": "/bookTestTask/static/js/main.f0aac35a.js",
+    "static/js/787.28cb0dcd.chunk.js": "/bookTestTask/static/js/787.28cb0dcd.chunk.js",
+    "static/media/1618496604_24-phonoteka_org-p-fon-knigi-dlya-fotoshopa-28.jpg": "/bookTestTask/static/media/1618496604_24-phonoteka_org-p-fon-knigi-dlya-fotoshopa-28.8befd13bad445e36ff84.jpg",
+    "index.html": "/bookTestTask/index.html",
+    "main.243e708b.css.map": "/bookTestTask/static/css/main.243e708b.css.map",
+    "main.f0aac35a.js.map": "/bookTestTask/static/js/main.f0aac35a.js.map",
+    "787.28cb0dcd.chunk.js.map": "/bookTestTask/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.243e708b.css",
+    "static/js/main.f0aac35a.js"
+  ]
+}
