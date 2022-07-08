@@ -1,0 +1,16 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.container{
+  @include flexStyle(column,flex-start, center);
+
+  .results{
+    @include text($textColor,$headerFont,18px, 600);
+    margin: 20px 0;
+  }
+  .items{
+    width: 100%;
+    @include flexStyle(row,space-around, flex-start);
+    flex-wrap: wrap;
+  }
+}

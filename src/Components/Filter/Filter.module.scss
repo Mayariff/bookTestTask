@@ -1,0 +1,8 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.filter{
+  padding: 0 10px;
+  @include flexStyle(row,center,  center);
+  @include text($colorforMain,$baseFont,16px, 400);
+}

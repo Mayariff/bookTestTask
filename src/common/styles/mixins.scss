@@ -1,0 +1,35 @@
+@mixin flexStyle($dir, $jContent, $Items){
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jContent;
+  align-items: $Items;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+@mixin noneBaseStyle(){
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin text($color,$fontFamily,$fontSize, $fontWeight) {
+  color: $color;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight ;
+}
+
+@mixin container(){
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@mixin imgBcg($color){
+  background: $color  no-repeat center scroll;
+  background-size:cover;
+}
+

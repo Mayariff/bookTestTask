@@ -1,0 +1,18 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.layout{
+  background-color: $backgroundColor;
+  .container{
+    @include container();
+    @include flexStyle(column,flex-start,  center);
+    min-height: 100vh;
+    position: relative;
+    .LinearProgress{
+      position: absolute;
+      text-align:center;
+      width: 100%;
+      z-index:1
+    }
+  }
+}
