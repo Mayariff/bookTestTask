@@ -20,21 +20,21 @@ const Header = () => {
 
     //for searching input
     const [searchingValue, setSearchingValue] = useState<string>(Params.searchingValue)
-    const searchValue: ChangeEventHandler<HTMLInputElement> = (e) => {
+    const searchValue: ChangeEventHandler<HTMLInputElement> = useCallback((e) => {
         setSearchingValue(e.currentTarget.value)
-    }
+    },[setSearchingValue])
     // for searching button
-    const searchBooks = async () => {
+    const searchBooks = useCallback(async () => {
         dispatch(fetchBooks(Params))
         navigate(ROUTE.HOME)
-    }
+    }, [Params])
 
-    const onKeyPress: React.KeyboardEventHandler<HTMLInputElement> = (e) => {
+    const onKeyPress: React.KeyboardEventHandler<HTMLInputElement> = useCallback((e) => {
         if (e.key === "Enter") {
             dispatch(fetchBooks(Params))
             navigate(ROUTE.HOME)
         }
-    }
+    },[Params])
 
 
     //select Subject

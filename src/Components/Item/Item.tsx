@@ -6,7 +6,7 @@ import {ROUTE} from "../../App/Router/RoutingData";
 import {itemType} from "../Filter/type";
 
 
-const Item = ({book, id}: itemType) => {
+const Item = React.memo(({book, id}: itemType) => {
 
     const category = book.categories ? book.categories[0] : null
     const image = {backgroundImage: `url(${book.imageLinks.thumbnail ? book.imageLinks.thumbnail : noPhoto})`}
@@ -24,7 +24,7 @@ const Item = ({book, id}: itemType) => {
                 </div>
             </div>
         </Link>
-    );
-};
+    )
+})
 
 export default Item;

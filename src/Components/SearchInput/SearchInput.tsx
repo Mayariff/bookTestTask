@@ -7,7 +7,7 @@ import {selectStatus} from "../../BLL (business logic layer)/selectors";
 import {SearchInputType} from "./type";
 
 
-const SearchInput = ({value, onChange, onKeyPress, onClick}: SearchInputType) => {
+const SearchInput = React.memo(({value, onChange, onKeyPress, onClick}: SearchInputType) => {
 
     const status = useAppSelector(selectStatus)
 
@@ -31,6 +31,6 @@ const SearchInput = ({value, onChange, onKeyPress, onClick}: SearchInputType) =>
             </IconButton>
         </Paper>
     );
-};
+});
 
 export default SearchInput;

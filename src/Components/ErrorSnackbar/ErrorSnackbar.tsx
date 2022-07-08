@@ -18,7 +18,6 @@ export function ErrorSnackbar() {
     const error = useAppSelector(selectError);
     const dispatch = useDispatch();
     const [open, setOpen] = React.useState(false);
-
     useEffect(() => {
         error && setOpen(true)
     }, [])

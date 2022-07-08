@@ -12,7 +12,6 @@ type propsType = {
 
 const Filter = React.memo(({nameFilter, selectorValues, selectValue, value}: propsType) => {
 
-
     const onChangeHandler = (e: SelectChangeEvent) => {
         selectValue(e.target.value)
     }
